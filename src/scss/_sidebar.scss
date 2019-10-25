@@ -53,6 +53,10 @@
   li {
     width: 100%;
 
+    &.active {
+      background: #f0f0f0;
+    }
+
     > a {
       display: flex;
       padding: 7px 20px 8px 22px;
