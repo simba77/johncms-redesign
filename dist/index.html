@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JohnCMS</title>
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
 <div class="wrapper" id="app">
 
-    <div class="container">
-        <h1>H1 title</h1>
 
-        <p>
-            FA icon: <br>
-            <i class="fas fa-location-arrow mr-2"></i>
-        </p>
-
-        <div class="alert alert-success">
-            Alert test
+    <div class="sidebar">
+        <div class="sidebar__logo">
+            <a href="#">
+                <span class="logo__image"><img src="assets/images/logo.gif" alt="." class="img-fluid"></span>
+            </a>
         </div>
+        <div class="sidebar__wrapper">
+            <!-- Пользователь -->
+            <div class="sidebar__user">
+                <a class="nav-link user__link"
+                   href="#"
+                   data-toggle="dropdown"
+                   aria-expanded="false">Алексей Иванов <span><svg class="icon icon_triangle"><use xlink:href="assets/icons/sprite.svg#triangle"/></svg></span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
 
-        <div>
-            Example component:
+            <!-- Группа кнопок -->
+            <div class="sidebar__buttons btn-group">
+                <div class="group_item">
+                    <a href="#">
+                        <svg class="icon icon_messages"><use xlink:href="assets/icons/sprite.svg#messages"/></svg>
+                        <span class="badge badge-danger badge-round">3</span>
+                    </a>
+                </div>
+                <div class="group_item">
+                    <a href="">
+                        <svg class="icon icon_add"><use xlink:href="assets/icons/sprite.svg#add"/></svg>
+                    </a>
+                </div>
+                <div class="group_item">
+                    <a href="">
+                        <svg class="icon icon_search"><use xlink:href="assets/icons/sprite.svg#search"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Меню -->
+            <ul class="nav nav__vertical">
+                <li class="active"><a href="#">Персонал</a></li>
+                <li><a href="#">Клиенты <span class="badge badge-danger badge-pill">15</span></a></li>
+                <li><a href="#">Договора</a></li>
+                <li><a href="#">Оформление</a></li>
+                <li><a href="#">Отчеты</a></li>
+                <li><a href="#">Справочники</a></li>
+                <li><a href="#">Районы</a></li>
+                <li><a href="#">Дубли</a></li>
+                <li><a href="#">Подразделения</a></li>
+                <li><a href="#">Vip</a></li>
+                <li><a href="#">Загрузки</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
         </div>
+    </div>
+    <div class="content-container">
+        <nav class="navbar navbar-expand-lg navbar-transparent top_nav">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle">
+                        <button type="button" class="navbar-toggler">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <example-component></example-component>
 
     </div>
-
 
 </div>
 <script src="assets/js/app.js"></script>
