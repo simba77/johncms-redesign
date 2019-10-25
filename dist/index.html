@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-<div class="wrapper" id="app">
+<div class="wrapper justify-content-end d-flex" id="app">
 
 
     <div class="sidebar">
         <div class="sidebar__logo">
             <a href="#">
-                <span class="logo__image"><img src="assets/images/logo.gif" alt="." class="img-fluid"></span>
+                <span class="logo__image"><img src="assets/images/logo.gif" alt="." style="width: 170px;" class="img-fluid"></span>
             </a>
         </div>
         <div class="sidebar__wrapper">
@@ -22,12 +22,12 @@
                 <a class="nav-link user__link"
                    href="#"
                    data-toggle="dropdown"
-                   aria-expanded="false">Алексей Иванов <span><svg class="icon icon_triangle"><use xlink:href="assets/icons/sprite.svg#triangle"/></svg></span></a>
+                   aria-expanded="false">Алексей Иванов <span><svg class="icon icon-chevron-bottom"><use xlink:href="assets/icons/sprite.svg#chevron-bottom"/></svg></span></a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Изменить профиль</a>
+                    <a class="dropdown-item" href="#">Настройки</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Выход</a>
                 </div>
             </div>
 
@@ -41,35 +41,97 @@
                 </div>
                 <div class="group_item">
                     <a href="">
-                        <svg class="icon icon_add"><use xlink:href="assets/icons/sprite.svg#add"/></svg>
+                        <svg class="icon icon_add"><use xlink:href="assets/icons/sprite.svg#user"/></svg>
                     </a>
                 </div>
                 <div class="group_item">
                     <a href="">
-                        <svg class="icon icon_search"><use xlink:href="assets/icons/sprite.svg#search"/></svg>
+                        <svg class="icon icon_search"><use xlink:href="assets/icons/sprite.svg#settings"/></svg>
                     </a>
                 </div>
             </div>
 
             <!-- Меню -->
             <ul class="nav nav__vertical">
-                <li class="active"><a href="#">Персонал</a></li>
-                <li><a href="#">Клиенты <span class="badge badge-danger badge-pill">15</span></a></li>
-                <li><a href="#">Договора</a></li>
-                <li><a href="#">Оформление</a></li>
-                <li><a href="#">Отчеты</a></li>
-                <li><a href="#">Справочники</a></li>
-                <li><a href="#">Районы</a></li>
-                <li><a href="#">Дубли</a></li>
-                <li><a href="#">Подразделения</a></li>
-                <li><a href="#">Vip</a></li>
-                <li><a href="#">Загрузки</a></li>
-                <li><a href="#">Статистика</a></li>
-                <li><a href="#">Помощь</a></li>
+                <li class="active">
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#book"/>
+                        </svg>
+                        <span class="flex-grow-1">Новости</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#book-open"/>
+                        </svg>
+                        <span class="flex-grow-1">Документация</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#forum"/>
+                        </svg>
+                        <span class="flex-grow-1">Форум</span>
+                        <span class="badge badge-danger badge-pill">15</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <svg class="icon guest-book-icon">
+                        <use xlink:href="assets/icons/sprite.svg#chat"/>
+                    </svg>
+                    <span class="flex-grow-1">Гостевая</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="assets/icons/sprite.svg#download"/>
+                    </svg>
+                    <span class="flex-grow-1">Загрузки</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="assets/icons/sprite.svg#text"/>
+                    </svg>
+                    <span class="flex-grow-1">Библиотка</span>
+                </a></li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#users"/>
+                        </svg>
+                        <span class="flex-grow-1">Пользователи</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#picasa"/>
+                        </svg>
+                        <span class="flex-grow-1">Фотоальбомы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#info"/>
+                        </svg>
+                        <span class="flex-grow-1">Информация, FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="assets/icons/sprite.svg#help-circle"/>
+                        </svg>
+                        <span class="flex-grow-1">Контакты</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
-    <div class="content-container">
+    <div class="content-container content-container-padding">
         <nav class="navbar navbar-expand-lg navbar-transparent top_nav">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
@@ -83,6 +145,183 @@
                 </div>
             </div>
         </nav>
+
+        <div>
+            <h1>Заголовок страницы</h1>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Форум</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Хлебная крошка</li>
+                </ol>
+            </nav>
+
+            <div>
+                <h3>Alerts</h3>
+
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    A simple dark alert—check it out!
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="mt-3">
+            <h3>Buttons</h3>
+
+            <div>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+
+        </div>
+
+        <div class="mt-3">
+            <h3>Outline buttons</h3>
+
+            <div>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="mt-3">
+            <h3>Forms</h3>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+        <div class="mt-3">
+            <h3>Progress</h3>
+
+            <div class="mb-3">
+                <div class="progress mb-1">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-1">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-1">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="progress mb-1">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-1">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-1">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-1">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mt-3">
+            <h3>Spinners</h3>
+
+            <div>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
 
 
     </div>

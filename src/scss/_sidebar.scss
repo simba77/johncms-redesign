@@ -1,8 +1,9 @@
 .sidebar {
-  background-color: #f5f6f8;
+  background-color: #ffffff;
   color: #ffffff;
+  border-right: 1px solid #dadada;
   font-size: 0.82rem;
-  font-weight: 300;
+  font-weight: 500;
   position: fixed;
   top: 0;
   height: 100%;
@@ -12,7 +13,10 @@
   z-index: 999;
 
   a {
-    color: #052448;
+    color: #4a5865;
+    &:hover {
+      color: #052448;
+    }
   }
 
   .dropdown-menu {
@@ -20,22 +24,21 @@
     border-color: #aaabad;
   }
   .dropdown-divider {
-    border-top: 1px solid #aaabad;
+    border-top: 1px solid #dce0e6;
   }
 }
 
 .sidebar__logo {
   a {
-    display: inline-block;
-    padding: 18px 50px 18px 56px;
+    display: flex;
   }
 }
 
 .logo__image {
   width: 100%;
-  height: 30px;
   display: block;
-  margin: 0 auto;
+  text-align: center;
+  padding: 1.3rem 0 0.6rem 0;
 }
 
 .sidebar__wrapper {
@@ -52,7 +55,7 @@
 
     > a {
       display: flex;
-      padding: 7px 30px 8px 35px;
+      padding: 7px 20px 8px 22px;
       justify-content: space-between;
       align-items: center;
 
@@ -61,11 +64,16 @@
       }
 
       .badge {
-        font-size: 100%;
-        font-weight: 300;
+        font-size: 0.7rem;
+        font-weight: 500;
       }
 
     }
+  }
+  .icon {
+    height: 20px;
+    width: 20px;
+    margin: 0 5px 0 0;
   }
 }
 
@@ -73,8 +81,8 @@
 .sidebar__buttons {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #dce0e6;
+  border-bottom: 1px solid #dce0e6;
 
   a {
     &:hover {
@@ -83,7 +91,7 @@
   }
 
   .group_item {
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid #dce0e6;
     width: calc(100% / 3);
 
     &:last-of-type {
@@ -137,13 +145,13 @@
     transform: translate3d(0,0,0);
   }
 
-  .main_page {
+  .content-container {
     width: 100%;
     padding-top: 10px;
     transition: all 0.5s;
   }
 
-  .sidebar_opened .main_page {
+  .sidebar_opened .content-container {
     transform: translate3d(13rem,0,0);
   }
 
