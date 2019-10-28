@@ -131,8 +131,8 @@
 
 @media (max-width: 991px) {
   .top_nav {
-    padding-bottom: 0;
-    padding-left: 0;
+    padding: 0 0 0 1rem;
+    min-height: 2.5rem;
   }
 
   .navbar-toggler {
@@ -145,8 +145,22 @@
     transition: all .5s;
   }
 
-  .sidebar_opened .sidebar {
-    transform: translate3d(0,0,0);
+  body.sidebar_opened {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .sidebar_opened {
+    .wrapper {
+      overflow: hidden;
+    }
+    .sidebar {
+      transform: translate3d(0,0,0);
+    }
+    .content-container {
+      transform: translate3d(13rem,0,0);
+    }
+
   }
 
   .content-container {
@@ -155,14 +169,6 @@
     transition: all 0.5s;
   }
 
-  .sidebar_opened .content-container {
-    transform: translate3d(13rem,0,0);
-  }
-
-  body.sidebar_opened {
-    position: relative;
-    overflow-x: hidden;
-  }
 
   .navbar-toggler-bar {
     display: block;
