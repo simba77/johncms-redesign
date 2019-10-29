@@ -6,10 +6,9 @@ $font-family-sans-serif: "Roboto", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+//$fa-font-path: '/assets/fonts';
 
-$fa-font-path: '/assets/fonts';
-
-// Colors
+// Цвета
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -20,3 +19,13 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+// Размеры шрифтов
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 1.85 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.35 !default;
+$h4-font-size:                $font-size-base * 1.15 !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base !default;
