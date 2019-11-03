@@ -129,10 +129,23 @@
   padding: 0.7rem 1rem;
 }
 
+.icon_with_badge {
+  position: relative;
+  .badge {
+    position: absolute;
+    left: 40%;
+    top: -30%;
+  }
+}
+
 @media (max-width: 991px) {
   .top_nav {
-    padding: 0 0 0 1rem;
+    padding: 0 1rem;
     min-height: 2.5rem;
+    background: #fff;
+    a {
+      color: #4a5865;
+    }
   }
 
   .navbar-toggler {
