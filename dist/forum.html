@@ -159,7 +159,8 @@
             </div>
         </nav>
 
-        <div>
+        <div class="container-fluid">
+
             <h1 class="mb-0">Форум</h1>
 
             <nav aria-label="breadcrumb">
@@ -169,29 +170,46 @@
                 </ol>
             </nav>
 
-            <nav class="navbar navbar-expand navbar-light bg-white mb-3 border">
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Непрочитанное <span class="badge badge-pill badge-danger">5</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Файлы</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Поиск">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
-                            </div>
+            <nav class="navbar navbar-expand navbar-light bg-white mb-3 border small-full-width">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#" title="Непрочитанное">
+                            <span class="icon_with_badge">
+                                <svg class="icon">
+                                    <use xlink:href="assets/icons/sprite.svg#forum"/>
+                                </svg>
+                                <span class="badge badge-pill badge-danger">75k</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#" title="Файлы">
+                            <span class="icon_with_badge">
+                                <svg class="icon">
+                                    <use xlink:href="assets/icons/sprite.svg#download"/>
+                                </svg>
+                                <span class="badge badge-pill badge-danger ml-1">5k</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Показать за период">
+                            <svg class="icon"><use xlink:href="assets/icons/sprite.svg#calendar"/></svg>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Поиск">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success" type="submit">Найти</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </nav>
 
 
-            <div class="list-sections list-group">
+            <div class="list-sections list-group small-full-width">
                 <div class="list-group-item">
                     <a href="forum_topics.html">JohnCMS</a>
                     <div class="small">Поддержка новых версий JohnCMS, начиная с версии 4.x.x и новее</div>
