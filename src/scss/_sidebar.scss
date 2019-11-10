@@ -2,20 +2,22 @@
   background-color: #ffffff;
   color: #ffffff;
   border-right: 1px solid #dadada;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 500;
   position: fixed;
   top: 0;
   height: 100%;
   bottom: 0;
-  width: 13rem;
+  width: 17rem;
   left: 0;
   z-index: 999;
 
   a {
-    color: #4a5865;
+    color: #66615b;
+    opacity: 0.8;
+    transition: opacity 0.2s;
     &:hover {
-      color: #052448;
+      opacity: 1;
     }
   }
 
@@ -30,6 +32,7 @@
 
 .sidebar__logo {
   a {
+    opacity: 1;
     display: flex;
   }
 }
@@ -75,9 +78,9 @@
     }
   }
   .icon {
-    height: 20px;
-    width: 20px;
-    margin: 0 5px 0 0;
+    height: 25px;
+    width: 25px;
+    margin: 0 10px 0 0;
   }
 }
 
@@ -154,7 +157,7 @@
   }
 
   .sidebar {
-    transform: translate3d(-13rem,0,0);
+    transform: translate3d(-17rem,0,0);
     transition: all .5s;
   }
 
@@ -171,7 +174,7 @@
       transform: translate3d(0,0,0);
     }
     .content-container {
-      transform: translate3d(13rem,0,0);
+      transform: translate3d(17rem,0,0);
     }
 
   }

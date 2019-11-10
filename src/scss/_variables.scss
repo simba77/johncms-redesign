@@ -1,5 +1,5 @@
 // Body
-$body-bg: #f3f5f8;
+$body-bg: #f4f3ef;
 
 // Typography
 $font-family-sans-serif: "Roboto", sans-serif;
@@ -72,3 +72,8 @@ $breadcrumb-active-color: $gray-600;
 $breadcrumb-divider: quote("/");
 
 $breadcrumb-border-radius: $border-radius;
+
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow: 0 6px 10px -4px rgba(0, 0, 0, .15);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;

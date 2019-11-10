@@ -155,27 +155,108 @@
         </nav>
 
         <div>
-            <h1 class="mb-0">Форум</h1>
+            <div class="container-fluid">
 
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Форум</li>
-                </ol>
-            </nav>
+                <h1 class="mb-0">Форум</h1>
 
-            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Форум</li>
+                    </ol>
+                </nav>
 
-                <div class="card">
-                    <div class="card-body">
-                        <a href=""></a>
-                        
-                        
-                    </div>
+                <nav class="navbar navbar-expand navbar-light bg-white mb-3 shadow small-full-width border-radius-12">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#" title="Непрочитанное">
+                                <span class="d-none d-sm-inline">Непрочитанное</span>
+                                <span class="icon_with_badge mr-sm-3">
+                                <svg class="icon d-sm-none">
+                                    <use xlink:href="assets/icons/sprite.svg#forum"/>
+                                </svg>
+                                <span class="badge badge-pill badge-danger">75k</span>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="#" title="Файлы">
+                            <span class="icon_with_badge">
+                                <svg class="icon">
+                                    <use xlink:href="assets/icons/sprite.svg#download"/>
+                                </svg>
+                                <span class="badge badge-pill badge-danger ml-1">5k</span>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="Показать за период">
+                                <svg class="icon"><use xlink:href="assets/icons/sprite.svg#calendar"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline search-in-nav">
+                        <div class="input-with-inner-btn">
+                            <input class="form-control pr-5" type="search" placeholder="Поиск">
+                            <button class="btn icon-button" type="submit">
+                                <svg class="icon">
+                                    <use xlink:href="assets/icons/sprite.svg#search"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </nav>
+
+                <div class="small-full-width list-items shadow mb-4 border-radius-12 overflow-hidden">
+                    <a href="forum_topics.html" class="list-item d-flex">
+                        <div class="flex-grow-1 item-content">
+                            <div class="item-name">От разработчиков</div>
+                            <div class="item-desc">Поддержка новых версий JohnCMS, начиная с версии 4.x.x и новее</div>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#chevron-right"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="forum_topics.html" class="list-item d-flex">
+                        <div class="flex-grow-1 item-content">
+                            <div class="item-name">Инструкции</div>
+                            <div class="item-desc">Поддержка новых версий JohnCMS, начиная с версии 4.x.x и новее</div>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#chevron-right"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="forum_topics.html" class="list-item d-flex">
+                        <div class="flex-grow-1 item-content">
+                            <div class="item-name">BugTraq (ошибки в работе)</div>
+                            <div class="item-desc">Поддержка новых версий JohnCMS, начиная с версии 4.x.x и новее</div>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#chevron-right"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="forum_topics.html" class="list-item d-flex">
+                        <div class="flex-grow-1 item-content">
+                            <div class="item-name">Другое...</div>
+                        </div>
+                        <div class="icon-right">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons/sprite.svg#chevron-right"/>
+                            </svg>
+                        </div>
+                    </a>
+
                 </div>
 
-
-
+                <div >
+                    Всего: 4
+                </div>
 
             </div>
 
