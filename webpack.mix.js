@@ -18,12 +18,14 @@ mix.js('src/js/app.js', 'dist/assets/js')
     });
 
 
+/*
 // Если не нужен сервер статики, закомментировать...
 var browserSync = require("browser-sync").create();
 browserSync.init({
     watch: true,
     server: "./dist"
 });
+*/
 
 
 // Full API
